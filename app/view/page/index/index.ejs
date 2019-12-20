@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include("../../common/public.ejs") %>
+    <title><%= TITLE %></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="" />
+</head>
+<body>
+<%- include("../../common/header.ejs") %>
+
+<div style="color:red">首页</div>
+<ul>
+    <% for (var i = 0; i < ITEMS.length; i++) { %>
+        <li><%= ITEMS[i].title %></li>
+    <% } %>
+
+</ul>
+
+<%- include("../../common/footer.ejs") %>
+</body>
+</html>
